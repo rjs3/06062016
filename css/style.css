@@ -103,39 +103,129 @@ img {
 
 /* Conteudo */
 
-.coluna1 {
+.linha1coluna1 {
 	height: 165px;
 	background-color: #8d55a1;
 }
 
-.coluna2 {
+.linha1coluna2 {
 	height: 165px;
 	background-color: #1e76ba;
 }
 
-.coluna3 {
+.linha1coluna3 {
 	height: 165px;
 	background-color: #009797;
 }
 
-.coluna4 {
+.linha2coluna1, .linha2coluna2, .linha2coluna3 {
 	margin-top: 10px;
-	height: 520px;
-	border: 1px solid #8d55a1;
 }
 
-.coluna5 {
-	margin-top: 10px;
-	height: 520px;
-	border: 1px solid #1e76ba;
+.linha3coluna1 {
+	background-color: #8d55a1;
+	height: 70px;
+	width: 100%;
+	font-size: 18pt;
+	font-weight: bold;
+	border: none;
+	color: white;
+	text-align: left;
 }
 
-.coluna6 {
-	margin-top: 10px;
-	height: 520px;
-	border: 1px solid #009797;
+.linha3coluna1:hover {
+	opacity: 0.8;
 }
 
+.linha3coluna1:active {
+	opacity: 0.9;
+}
+
+.linha3coluna2 {
+	background-color: #1e76ba;
+	height: 100px;
+	width: 100%;
+	border: none;
+	font-size: 18pt;
+	font-weight: bold;
+	color: white;
+	text-align: left;
+}
+
+.linha3coluna2:hover {
+	opacity: 0.8;
+}
+
+.linha3coluna2:active {
+	opacity: 0.9;
+}
+
+.linha3coluna3 {
+	background-color: #009797;
+	height: 100px;
+	width: 100%;
+	border: none;
+	color: white;
+	text-align: left;
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.linha3coluna3:hover {
+	opacity: 0.8;
+}
+
+.linha3coluna3:active {
+	opacity: 0.9;
+}
+
+.btColuna {
+	height: 70px;
+	width: 100%;
+	border-top: 3px solid white;
+	border-right: none;
+	border-left: none;
+	color: black;
+	text-align: left;
+	font-size: 14pt;
+}
+
+.btColuna:hover {
+	opacity: 0.8;
+}
+
+.cor1Coluna1 {
+	background-color: #d1bbd9;
+}
+
+.cor2Coluna1 {
+	background-color: #beabc5;
+}
+
+.cor1Coluna2 {
+	background-color: #a5c8e3;
+}
+
+.cor2Coluna2 {
+	background-color: #97b7cf;
+}
+
+.cor1Coluna3 {
+	background-color: #99d5d5;
+}
+
+.cor2Coluna3 {
+	background-color: #8bc2c2;
+}
+
+.indiceTopado {
+	margin-top: 3px;
+	height: 20px;
+}
+
+.indiceTopado:hover {
+	opacity: 1;
+}
 /* Conteudo - DISPOSITIVOS COM MAIS DE 992px */
 @media (min-width: 992px) {
 
@@ -147,15 +237,23 @@ img {
 		margin: 0px !important;
 	}
 
-	.coluna1, .coluna2, .coluna4, .coluna5 {
+	.linha1coluna1, .linha1coluna2, .linha2coluna1, .linha2coluna2 {
 		margin-right: 30px;
+	}
+
+	.RodapeColuna2 {
+		height: 200px;
+	}
+
+	.RodapeColuna3 {
+		height: 130px;
 	}
 
 }
 
 /* Conteudo - DISPOSITIVOS COM MENOS DE 992px */
 @media (max-width: 991px) {
-	.coluna4, .coluna5, .coluna6 {
+	.linha2coluna1, .linha2coluna2, .linha2coluna3 {
 		margin-bottom: 30px;
 	}
 }
