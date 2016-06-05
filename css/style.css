@@ -11,6 +11,7 @@ a {
 body {
 	padding-top: 50px;
 }
+
 /* Atributos Gerais - END */
 
 /* Responsive Navbar - BEGIN */
@@ -84,6 +85,11 @@ img {
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
 	opacity: 0.7;!important;
+}
+
+.navbar-default {
+	border-color:transparent !important;
+	background-color:transparent !important;
 }
 
 .navbar-nav > li:hover {
@@ -242,6 +248,21 @@ img {
 	font-weight: bold;
 	color: white;
 }
+
+.col-xs-12 {
+	padding-right:0px !important;
+}
+
+.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:90px;
+   width:100%;
+   border-bottom:3px solid white;
+   background:#1e3042;
+}
+
 /* Conteudo - DISPOSITIVOS COM MAIS DE 992px */
 @media (min-width: 992px) {
 
@@ -268,6 +289,10 @@ img {
 	.RodapeColuna3 {
 		height: 130px;
 	}
+	
+	.linha2coluna1, .linha2coluna2, .linha2coluna3 {
+		height:665px !important;
+	}
 
 }
 
@@ -278,12 +303,16 @@ img {
 	}
 
 	.alinhamentoPorcentagem {
-		margin-right: 43%;
+		margin-right: 45%;
 		margin-top: 2px;
 	}
 
 	.linha1coluna1, .linha1coluna2, .linha1coluna3 {
 		height: 205px;
+	}
+	
+	.footer {
+		position:relative;
 	}
 
 }
