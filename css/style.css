@@ -10,6 +10,7 @@ a {
 
 body {
 	padding-top: 50px;
+	overflow-x: hidden;
 }
 
 /* Atributos Gerais - END */
@@ -88,8 +89,8 @@ img {
 }
 
 .navbar-default {
-	border-color:transparent !important;
-	background-color:transparent !important;
+	border-color: transparent !important;
+	background-color: transparent !important;
 }
 
 .navbar-nav > li:hover {
@@ -130,7 +131,7 @@ img {
 
 .linha3coluna1 {
 	background-color: #8d55a1;
-	height: 70px;
+	height: 60px;
 	width: 100%;
 	font-size: 18pt;
 	font-weight: bold;
@@ -149,7 +150,7 @@ img {
 
 .linha3coluna2 {
 	background-color: #1e76ba;
-	height: 100px;
+	height: 90px;
 	width: 100%;
 	border: none;
 	font-size: 18pt;
@@ -168,7 +169,7 @@ img {
 
 .linha3coluna3 {
 	background-color: #009797;
-	height: 100px;
+	height: 90px;
 	width: 100%;
 	border: none;
 	color: white;
@@ -186,7 +187,7 @@ img {
 }
 
 .btColuna {
-	height: 70px;
+	height: 60px;
 	width: 100%;
 	border-top: 3px solid white;
 	border-right: none;
@@ -194,6 +195,8 @@ img {
 	color: black;
 	text-align: left;
 	font-size: 14pt;
+	font-family: "Gotham";
+	font-weight: 700;
 }
 
 .btColuna:hover {
@@ -250,17 +253,22 @@ img {
 }
 
 .col-xs-12 {
-	padding-right:0px !important;
+	padding-right: 0px !important;
 }
 
 .footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:90px;
-   width:100%;
-   border-bottom:3px solid white;
-   background:#1e3042;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 90px;
+	width: 100%;
+	border-bottom: 3px solid white;
+	background: #1e3042;
+}
+
+.imgFooter {
+	margin-right: 35px;
+	margin-top: -10px;
 }
 
 /* Conteudo - DISPOSITIVOS COM MAIS DE 992px */
@@ -276,6 +284,7 @@ img {
 	.conteudo {
 		padding: 0px 10px 0px 10px;
 		margin: 0px !important;
+		height: 765px;
 	}
 
 	.linha1coluna1, .linha1coluna2, .linha2coluna1, .linha2coluna2 {
@@ -283,15 +292,11 @@ img {
 	}
 
 	.RodapeColuna2 {
-		height: 200px;
+		height: 170px;
 	}
 
 	.RodapeColuna3 {
-		height: 130px;
-	}
-	
-	.linha2coluna1, .linha2coluna2, .linha2coluna3 {
-		height:665px !important;
+		height: 110px;
 	}
 
 }
@@ -303,16 +308,26 @@ img {
 	}
 
 	.alinhamentoPorcentagem {
-		margin-right: 45%;
+		margin-right: 44.5%;
 		margin-top: 2px;
 	}
 
 	.linha1coluna1, .linha1coluna2, .linha1coluna3 {
 		height: 205px;
 	}
-	
+
 	.footer {
-		position:relative;
+		height: 200px;
+		position: relative;
+	}
+
+	.conteudo {
+		height: 100%;
+	}
+
+	.imgFooter {
+		margin-right: 40px;
+		margin-top: 0px;
 	}
 
 }

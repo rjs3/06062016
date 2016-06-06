@@ -1,0 +1,162 @@
+ul {
+	list-style-type: circle;
+}
+
+li {
+
+}
+
+.superior {
+	background-color: #8D55A1;
+	height: 160px;
+}
+
+.saibaMais {
+	background-color: #d1bbd9;
+	height: 130px;
+	margin-top: 10px;
+}
+
+.imgSaibaMais {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.alinhamentoSaibaMais {
+	font-size: 22pt;
+	font-weight: bold;
+	margin-top: -10px;
+	font-family: "Gotham";
+	color: white;
+}
+.saibaMaisBorda {
+	background-color: #8D55A1;
+	height: 60px;
+}
+
+.saibaMais p {
+	font-weight: normal;
+	font-size: 12pt;
+	font-family: "Gotham";
+	margin: 15px;
+}
+
+.LinhaInferior1 {
+	height: 69px;
+	background-color: #f5f5f5;
+	border: 1px solid #cdcbcb;
+	margin-right: 10px !important;
+	margin-left: 10px !important;
+	margin-top: -10px !important;
+}
+
+.linhaInferior2 {
+	background-color: #f5f5f5;
+	border: 1px solid #cdcbcb;
+	margin-right: 10px !important;
+	margin-left: 10px !important;
+	margin-top: 20px !important;
+	height: 800px;
+}
+
+.titulo {
+	margin: 40px 108px 0px 108px;
+}
+
+.titulo h1 {
+	font-weight: bold;
+	font-size: 24pt;
+	color: #8D55A1;
+	font-family: "Gotham";
+}
+
+.texto {
+	font-weight: normal;
+	font-size: 12pt;
+	font-family: "Gotham";
+	margin-top: 20px;
+	text-align: justify;
+}
+
+.tipo1 {
+	height: 100%;
+	width: 100%;
+	border: none;
+	float: right;
+	background-color: #bb99c7;
+	font-size: 14pt;
+	font-family: "Gotham";
+	border: 1px solid #bb99c7;
+}
+
+.tipo1:hover, .tipo2:hover {
+	opacity: 0.8;
+}
+
+.tipo2 {
+	height: 100%;
+	width: 100%;
+	border: none;
+	float: right;
+	background: #d1bbd9;
+	font-size: 14pt;
+	font-family: "Gotham";
+	border: 1px solid #d1bbd9;
+}
+
+.navegacao, .exercicios {
+	height: 100%;
+	float: right;
+	background-color: #f5f5f5;
+	font-size: 14pt;
+	font-family: "Gotham";
+}
+
+.alinhamentoImagem2 {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.alinhamentoParagrafo {
+	font-size: 24pt;
+	font-weight: bold;
+	text-align: center;
+	font-family: "Gotham";
+	color: white;
+	line-height: 150px;
+	margin-left: -50px;
+}
+
+@media (max-width: 991px) {
+
+	.navegacao, .exercicios {
+		border: 1px solid #cdcbcb;
+	}
+
+	.linhaInferior2 {
+		height: 100%;
+	}
+
+	.superior {
+		height: 250px;
+	}
+
+	.alinhamentoImagem2 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.alinhamentoParagrafo {
+		line-height: 0px;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	.titulo {
+		margin: 20px 40px 0px 40px;
+	}
+
+}
+
