@@ -1,3 +1,10 @@
+/*
+ * Projeto Saber
+ * @autor: Rodrigo Jose dos Santos
+ * @data: 06.06.2016
+ * @versao: v1.0
+ */
+
 /* Atributos Gerais */
 @font-face {
 	font-family: "Gotham";
@@ -11,6 +18,10 @@ a {
 body {
 	padding-top: 50px;
 	overflow-x: hidden;
+}
+
+img {
+	vertical-align: initial !important;
 }
 
 /* Atributos Gerais - END */
@@ -29,9 +40,11 @@ body {
 	-moz-border-radius: 0 6px 6px;
 	border-radius: 0 6px 6px 6px;
 }
+
 .dropdown-submenu:hover > .dropdown-menu {
 	display: block;
 }
+
 .dropdown-submenu > a:after {
 	display: block;
 	content: " ";
@@ -45,12 +58,15 @@ body {
 	margin-top: 5px;
 	margin-right: -10px;
 }
+
 .dropdown-submenu:hover > a:after {
 	border-left-color: #fff;
 }
+
 .dropdown-submenu.pull-left {
 	float: none;
 }
+
 .dropdown-submenu.pull-left > .dropdown-menu {
 	left: -100%;
 	margin-left: 10px;
@@ -58,6 +74,16 @@ body {
 	-moz-border-radius: 6px 0 6px 6px;
 	border-radius: 6px 0 6px 6px;
 }
+
+.navbar-default .navbar-toggle {
+	border: none;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background: rgba(0,0,0,0.5) !important;
+}
+
+/* MEDIA QUERIES - RESOLUÇÃO MENOR QUE 768px */
 @media (min-width: 768px) {
 	ul.navbar-nav li:hover > ul.dropdown-menu {
 		display: block;
@@ -65,9 +91,7 @@ body {
 }
 
 /* RESPONSIVE NAVBAR - ATRIBUTOS*/
-
 .divMenu {
-	padding: 0px 10px 0px 10px;
 	background-color: #1e3042;
 	color: white;
 }
@@ -78,10 +102,6 @@ body {
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
 	opacity: 0.6;
-}
-
-img {
-	vertical-align: initial !important;
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
@@ -105,11 +125,9 @@ img {
 	background: #1e3042 !important;
 	opacity: 1 !important;
 }
-
 /* Responsive NavBar - END*/
 
 /* Conteudo */
-
 .linha1coluna1 {
 	height: 165px;
 	background-color: #8d55a1;
@@ -134,10 +152,11 @@ img {
 	height: 60px;
 	width: 100%;
 	font-size: 18pt;
-	font-weight: bold;
 	border: none;
 	color: white;
 	text-align: left;
+	font-family: "Gotham";
+	font-weight: 900;
 }
 
 .linha3coluna1:hover {
@@ -154,7 +173,8 @@ img {
 	width: 100%;
 	border: none;
 	font-size: 18pt;
-	font-weight: bold;
+	font-family: "Gotham";
+	font-weight: 900;
 	color: white;
 	text-align: left;
 }
@@ -175,7 +195,8 @@ img {
 	color: white;
 	text-align: left;
 	font-size: 18pt;
-	font-weight: bold;
+	font-family: "Gotham";
+	font-weight: 900;
 }
 
 .linha3coluna3:hover {
@@ -274,6 +295,10 @@ img {
 /* Conteudo - DISPOSITIVOS COM MAIS DE 992px */
 @media (min-width: 992px) {
 
+	.row {
+		margin: auto !important;
+	}
+
 	.col-md-4 {
 		padding: 0px 0px 0px 0px !important;
 	}
@@ -308,7 +333,7 @@ img {
 	}
 
 	.alinhamentoPorcentagem {
-		margin-right: 44.5%;
+		margin-right: 41.5%;
 		margin-top: 2px;
 	}
 
@@ -328,6 +353,10 @@ img {
 	.imgFooter {
 		margin-right: 40px;
 		margin-top: 0px;
+	}
+
+	.noHover {
+		display: none;
 	}
 
 }
